@@ -41,17 +41,17 @@ tensorboard --logdir log --bind_all
 ```
 Training parameters could be found at ```config.py```.
 
-### Test
+### Inference
 To get pronunciation of a word:
 ```
-# RU example
-python test.py --word удалёнка
-u0.d.a0.lj.o1.n.k.a0.<eos>
+# PT-BR example
+python inference.py --sentence 'olá, vamos testar esse projeto.'
+o|l|a| |,| |v|a|m|ʊ|s| |t|e|s|t|a| |e|s|i| |p|ɾ|o|ʒ|e|t|ʊ| |.
 
 ```
 You could also visualize the attention weights, using ```--visualize```:
 ```
-# RU example
-python test.py --visualize --word удалёнка
-u0.d.a0.lj.o1.n.k.a0.<eos>
+# PT-BR example
+python inference.py --visualize --sentence 'olá, vamos testar esse projeto.'
+o|l|a| |,| |v|a|m|ʊ|s| |t|e|s|t|a| |e|s|i| |p|ɾ|o|ʒ|e|t|ʊ| |.
 ```
