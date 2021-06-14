@@ -108,8 +108,6 @@ def inference(sentence, char_separator='|', visualize=False):
         
     return phone_phrase.strip()[1:-1]    
 
-#ɛ|s|æ| |v|ɔ|s| |f|oɪ| |o|b|tʃ|i|d|æ| |a| |p|a|ɾ|ə|tʃ|i|r| |dʒ|y| |p|e|k|e|n|ʊ|s| |t|r|e|ʃ|ʊ|z| |e|s|t|r|a|i|d|ʊ|z| |dʒ|j| |u|m|æ| |eɪ|ŋ|t|r|e|v|i|s|t|æ| |s|e|dʒ|i|d|æ| |aʊ| |p|r|o|ɡ|r|ɐ̃|m|æ| |x|ɔ|d|æ| |v|i|v|æ| |.
-
 if __name__ == '__main__':
     # get word
     parser = argparse.ArgumentParser()
