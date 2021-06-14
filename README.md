@@ -20,6 +20,7 @@ As in https://github.com/hajix/G2P, on which this implementation was based, you 
 More details about data preparation and contribution could be found in ```resources```.<br/>
 Feel free to provide resources for other languages.
 
+
 ## Attention Model
 Both encoder-decoder seq2seq model and attention model could handle G2P problem.
 Here we train attention based model.
@@ -40,17 +41,17 @@ tensorboard --logdir log --bind_all
 ```
 Training parameters could be found at ```config.py```.
 
-### Inference
+### Test
 To get pronunciation of a word:
 ```
-# PT-BR example
-python inference.py --sentence 'olá, vamos testar esse projeto.'
-o|l|a| |,| |v|a|m|ʊ|s| |t|e|s|t|a| |e|s|i| |p|ɾ|o|ʒ|e|t|ʊ| |.
+# RU example
+python test.py --word удалёнка
+u0.d.a0.lj.o1.n.k.a0.<eos>
 
 ```
 You could also visualize the attention weights, using ```--visualize```:
 ```
-# PT-BR example
-python inference.py --visualize --word 'olá, vamos testar esse projeto.'
-o|l|a| |,| |v|a|m|ʊ|s| |t|e|s|t|a| |e|s|i| |p|ɾ|o|ʒ|e|t|ʊ| |.
+# RU example
+python test.py --visualize --word удалёнка
+u0.d.a0.lj.o1.n.k.a0.<eos>
 ```
