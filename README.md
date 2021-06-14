@@ -14,7 +14,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Dataset
-The dataset used here was taken from site http://www.portaldalinguaportuguesa.org/, as well as some insertions made by me so that the dataset would give more coverage to common words in the daily life of the Brazilian Portuguese. Some ambiguities were also resolved as the intent of this dataset is to contain a specific speaker bias. The dictionary based on S?o Paulo speakers was chosen.
+The dataset used here was taken from site http://www.portaldalinguaportuguesa.org/, as well as some insertions made by me so that the dataset would give more coverage to common words in the daily life of the Brazilian Portuguese. Some ambiguities were also resolved as the intent of this dataset is to contain a specific speaker bias. The dictionary based on São Paulo speakers was chosen.
 
 As in https://github.com/hajix/G2P, on which this implementation was based, you could easily provide and use your own language specific pronunciatin doctionary for training G2P.
 More details about data preparation and contribution could be found in ```resources```.<br/>
