@@ -40,7 +40,7 @@ tensorboard --logdir log --bind_all
 ```
 Training parameters could be found at ```config.py```.
 
-### Test
+### Inference
 To get pronunciation of a word:
 ```
 # PT-BR example
